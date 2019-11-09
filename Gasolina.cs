@@ -11,7 +11,7 @@ namespace Tarea3.Clases
         Cliente cl = new Cliente();
         public void Super()
         {
-            float precio = 1.50F, cantidad, subtotal, iva, total;       
+            float precio = 2.00F, cantidad, subtotal, iva, total;       
             Console.WriteLine("Ingrese la cantidad de galones a llenar");
             cantidad = float.Parse(Console.ReadLine());
             subtotal= cantidad* precio;
@@ -28,7 +28,7 @@ namespace Tarea3.Clases
         }
         public void Extra()
         {
-            float precio = 2.00F, cantidad, subtotal, iva, total;
+            float precio = 1.50F, cantidad, subtotal, iva, total;
             Console.WriteLine("Ingrese la cantidad de galones a llenar");
             cantidad = float.Parse(Console.ReadLine());
             subtotal = cantidad * precio;
