@@ -12,24 +12,14 @@ namespace Tarea3.Clases
         public string Nombres
         {
             get { return nombres; }
-            set {
-                if (value.Split().Length < 2)
-                {
-                    throw new Exception("Ingrese sus dos nombres");
-                }
-                nombres = value; }
+            set { nombres = value; }
         }
         private string apellidos;
 
         public string Apellidos
         {
             get { return apellidos; }
-            set {
-                if (value.Split().Length < 2)
-                {
-                    throw new Exception("Ingrese sus dos apellidos");
-                }
-                apellidos = value; }
+            set {apellidos = value; }
         }
         private int cedula;
         public int Cedula
