@@ -14,34 +14,10 @@ namespace Tarea3
             int opcion;
             Gasolina g = new Gasolina();
             Cliente c = new Cliente();
-            Boolean ban = true;
-            do
-            {
-                try
-                {
-                    Console.WriteLine("Nombres: ");
+            Console.WriteLine("Nombres: ");
             c.Nombres = Convert.ToString(Console.ReadLine());
-                    ban = false;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            } while (ban);
-            Boolean ban1 = true;
-            do
-            {
-                try
-                {
-                    Console.WriteLine("Apellidos: ");
-            c.Apellidos = Convert.ToString(Console.ReadLine());
-                    ban1 = false;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            } while (ban1);
+            Console.WriteLine("Apellidos: ");
+            c.Apellidos = Convert.ToString(Console.ReadLine());                  
             Console.WriteLine("Cédula: ");
             c.Cedula = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dirección: " );
